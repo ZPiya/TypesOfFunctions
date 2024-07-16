@@ -3,10 +3,10 @@
 ---
 
 #### **Project Title**
-MyToken Solidity Smart Contract
+TypesOfFunction Solidity Smart Contract
 
 #### **Description**
-`MyToken` is a Solidity smart contract that implements a basic ERC20 token with additional functionalities for minting, burning, and transferring tokens. The contract is designed to provide a straightforward and secure token management system for various decentralized applications (dApps).
+The `ExampleToken` is a Solidity smart contract that demonstrates various types of functions in Solidity. This contract includes basic ERC20 functionalities such as minting, burning, and transferring tokens. It serves as an educational tool to understand the use of different function types in Solidity.
 
 ---
 
@@ -16,7 +16,7 @@ MyToken Solidity Smart Contract
 1. **Clone the Repository:**
    ```sh
    git clone https://github.com/ZPiya/TypesOfFunctions.git
-   cd MyToken
+   cd TypesOfFunctions
    ```
 
 2. **Install Dependencies:**
@@ -28,39 +28,34 @@ MyToken Solidity Smart Contract
 
 ##### **Executing Program**
 
-1. **Compile the Contract:**
-   ```sh
-   truffle compile
-   ```
+1. **Open Remix IDE:**
+   - Go to [Remix Ethereum IDE](https://remix.ethereum.org/).
+   - Create a new file named `ExampleToken.sol` and paste the contract code from the repository.
 
-2. **Deploy the Contract:**
-   Update the `truffle-config.js` with your network details and deploy the contract:
-   ```sh
-   truffle migrate --network yourNetwork
-   ```
+2. **Compile the Contract:**
+   - In the Remix IDE, select the `ExampleToken.sol` file.
+   - Go to the "Solidity Compiler" tab and click "Compile ExampleToken.sol".
 
-3. **Interact with the Contract:**
-   Use Truffle console or your preferred method to interact with the deployed contract:
-   ```sh
-   truffle console --network yourNetwork
-   ```
+3. **Deploy the Contract:**
+   - Go to the "Deploy & Run Transactions" tab.
+   - Ensure the environment is set to "JavaScript VM (London)".
+   - Click "Deploy".
 
-   Example interaction:
+4. **Interact with the Contract:**
+   - After deployment, the contract functions will appear in the "Deployed Contracts" section.
+   - You can interact with functions like `mint`, `burnFrom`, and `transfer` directly from the Remix interface.
+
+   Example interaction using JavaScript in Remix console:
    ```javascript
-   let instance = await MyToken.deployed();
+   let instance = await ExampleToken.deployed();
    await instance.mint("0xYourAddress", 1000);
    await instance.transfer("0xRecipientAddress", 500);
    ```
 
 ##### **Help**
-For common issues, ensure you have the correct versions of dependencies and the correct network configuration in `truffle-config.js`.
+For common issues, ensure you have the correct versions of dependencies and the correct settings in the Remix IDE.
 
-Common commands for help:
-```sh
-truffle help
-```
-
-For additional issues, consult the Truffle documentation or raise an issue on the project repository.
+For additional issues, consult the Solidity documentation or raise an issue on the project repository.
 
 ---
 
