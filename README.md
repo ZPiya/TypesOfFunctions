@@ -15,7 +15,7 @@ MyToken Solidity Smart Contract
 ##### **Installing**
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/MyToken.git
+   git clone https://github.com/ZPiya/TypesOfFunctions.git
    cd MyToken
    ```
 
